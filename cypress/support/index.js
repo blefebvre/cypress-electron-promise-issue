@@ -13,8 +13,23 @@
 // https://on.cypress.io/configuration
 // ***********************************************************
 
-// Import commands.js using ES2015 syntax:
-// import './commands'
+// Get the user's access token from sessionStorage
+export function getAccessTokenPromise() {
+  // Works in Chrome, fails in Electron
+  return new Promise(resolve => {
+    cy.window().then(win => {
+      const token = win.sessionStorage.getItem("token");
+      resolve(token);
+    });
+  });
+}
 
-// Alternatively you can use CommonJS syntax:
-// require('./commands')
+export function getAccessTokenCypressPromise() {
+  // Works in Electron too, but can't be await'd
+  return new Cypress.Promise(resolve => {
+    cy.window().then(win => {
+      const token = win.sessionStorage.getItem("token");
+      resolve(token);
+    });
+  });
+}
