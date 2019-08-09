@@ -12,6 +12,8 @@ Run the test cases (they hit https://brucelefebvre.com/cypress-electron-promise-
 
     npm test
 
+Once Cypress opens up, select either Chrome or the Electron browser, and click "Run all specs".
+
 ## To note
 
 - All test cases run successfully on Chrome 76:
