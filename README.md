@@ -1,6 +1,6 @@
 # Working with Promises in Cypress test cases
 
-This repo was my attempt at repro'ing an issue I encountered with Cypress tests that used Promises. In the process, I learned of Cypress.Promise which gets around the issue I encountered with the embedded Electron browser (v61).
+This repo was my attempt at repro'ing an issue I encountered with Cypress tests that used Promises. In the process, I learned of `Cypress.Promise` which gets around Promise-based issues in the Electron browser (v61).
 
 ## To run the demo
 
