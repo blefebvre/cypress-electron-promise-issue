@@ -1,5 +1,5 @@
 {
-  "name": "cypress-electron-window-issue",
+  "name": "cypress-electron-promise-issue",
   "version": "1.0.0",
   "description": "Repo to demonstrate an issue accessing the window object when tests are run in the Electron browser",
   "main": "index.html",

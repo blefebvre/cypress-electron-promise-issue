@@ -8,14 +8,14 @@ Install dependencies:
 
     npm install
 
-Run the test cases (they hit https://brucelefebvre.com/cypress-electron-window-issue/public/ by default, so no need to start a local webserver):
+Run the test cases (they hit https://brucelefebvre.com/cypress-electron-promise-issue/public/ by default, so no need to start a local webserver):
 
     npm test
 
 ## To note
 
 - All test cases run successfully on Chrome 76:
-![Chrome window showing all tests passing, with the correct log statements too](https://raw.githubusercontent.com/blefebvre/cypress-electron-window-issue/master/img/chrome.png)
+![Chrome window showing all tests passing, with the correct log statements too](https://raw.githubusercontent.com/blefebvre/cypress-electron-promise-issue/master/img/chrome.png)
 
 - In Electron, the test cases involving Native Promise and `await` seem to get stuck, _but still pass!_
-![Electron browser window showing all tests passing, with log statements missing](https://raw.githubusercontent.com/blefebvre/cypress-electron-window-issue/master/img/electron.png)
+![Electron browser window showing all tests passing, with log statements missing](https://raw.githubusercontent.com/blefebvre/cypress-electron-promise-issue/master/img/electron.png)
