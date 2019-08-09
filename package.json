@@ -1,0 +1,16 @@
+{
+  "name": "cypress-electron-window-issue",
+  "version": "1.0.0",
+  "description": "Repo to demonstrate an issue accessing the window object when tests are run in the Electron browser",
+  "main": "index.html",
+  "scripts": {
+    "test": "cypress open",
+    "start": "http-server"
+  },
+  "author": "blefebvre",
+  "license": "MIT",
+  "devDependencies": {
+    "cypress": "^3.4.1",
+    "http-server": "^0.11.1"
+  }
+}
